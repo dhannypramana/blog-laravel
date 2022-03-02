@@ -31,4 +31,4 @@ Route::get('/about', function () {
 });
 
 Route::get('/posts', [PostController::class, 'posts']);
-Route::get('/posts/{slug}', [PostController::class, 'single_post']);
+Route::get('/posts/{post:slug}', [PostController::class, 'single_post']);
