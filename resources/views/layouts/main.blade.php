@@ -42,8 +42,8 @@
                     <input class="form-control mr-sm-2 col-lg-12" type="text" placeholder="Search" aria-label="Search">
                 </form>
             </div>
-            <button class="btn btn-outline-success mr-3" type="button">Masuk</button>
-            <button class="btn btn-outline-success" type="button">Daftar</button>
+            <button class="btn btn-outline-warning mr-3" type="button">Masuk</button>
+            <button class="btn btn-outline-warning" type="button">Daftar</button>
         </div>
     </nav>
 
