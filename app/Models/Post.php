@@ -17,5 +17,5 @@ class Post extends Model
         'author'
     ];
 
-    // protexted $guraded = ['id']
+    // protexted $guarded = ['id']
 }
