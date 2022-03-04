@@ -1,5 +1,9 @@
 @extends('layouts.main')
 
-@section('container')
-    <h1>Halaman Home</h1>
+@section('css-link')
+    <link rel="stylesheet" href="css/home.css">
+@endsection
+
+@section('main')
+    <h1>Ini Halaman Home</h1>
 @endsection

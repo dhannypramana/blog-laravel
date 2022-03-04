@@ -3,6 +3,7 @@
 use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,3 +15,17 @@ use App\Http\Controllers\PostController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/home', function () {
+    return view('home', [
+        'page_name' => 'home',
+    ]);
+});
+
+Route::get('/about', [UserController::class, 'show']);
+
+Route::get('/posts', function () {
+    return view('posts', [
+        'page_name' => 'posts',
+    ]);
+});
