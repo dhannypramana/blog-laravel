@@ -23,9 +23,5 @@ Route::get('/home', function () {
 });
 
 Route::get('/about', [UserController::class, 'show']);
-
-Route::get('/posts', function () {
-    return view('posts', [
-        'page_name' => 'posts',
-    ]);
-});
+Route::get('/posts', [PostController::class, 'index']);
+Route::get('/posts/{post:slug}', [PostController::class, 'single_post']);
