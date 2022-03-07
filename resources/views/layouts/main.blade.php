@@ -26,6 +26,9 @@
                     <li class="nav-item">
                         <a class="nav-link @if ($page_name === 'posts') active @endif" href="/posts">Posts</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link @if ($page_name === 'categories') active @endif" href="/categories">Categories</a>
+                    </li>
                 </ul>
             </div>
         </div>
