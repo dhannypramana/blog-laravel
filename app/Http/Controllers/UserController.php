@@ -11,7 +11,7 @@ class UserController extends Controller
     {
         return view('about', [
             'page_name' => 'about',
-            'user' => User::all()
+            'user' => User::all()->first()
         ]);
     }
 }
