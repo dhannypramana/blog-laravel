@@ -6,17 +6,25 @@
         )
 
         Post::create([
-            'title' => 'Judul Ketiga',
-            'slug' => 'judul_ketiga',
-            'author' => 'John Doe',
-            'body' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab in reprehenderit doloribus laborum pariatur itaque eligendi, ipsam deleniti omnis obcaecati eaque voluptas numquam quas nemo ducimus possimus. Voluptate blanditiis fugiat mollitia, aliquid ea architecto ipsum non, accusantium adipisci nesciunt deserunt quaerat? Delectus eveniet accusantium cumque minima, iste quos necessitatibus! Quibusdam aperiam recusandae, perferendis aliquid mollitia molestias cupiditate sit laudantium, totam ipsam, et placeat voluptates esse. Sed consequatur omnis provident illum distinctio assumenda consequuntur quia inventore velit officiis molestias iure reiciendis laudantium sunt suscipit eaque saepe, nihil, aspernatur aliquid magnam quo expedita id! Officia eius ipsum ducimus molestias vel quod placeat.'
+            'title' => 'Judul Pertama',
+            'slug' => 'judul_pertama',
+            'author' => 'Dhanny Pramana',
+            'body' => '<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab in reprehenderit doloribus laborum pariatur itaque eligendi, ipsam deleniti omnis obcaecati eaque voluptas numquam quas nemo ducimus possimus. Voluptate blanditiis fugiat mollitia, aliquid ea architecto ipsum non, accusantium adipisci nesciunt deserunt quaerat? Delectus eveniet accusantium cumque minima, iste quos necessitatibus! Quibusdam aperiam recusandae, perferendis aliquid mollitia molestias cupiditate sit laudantium, totam ipsam, et placeat voluptates esse. Sed consequatur omnis provident illum distinctio assumenda consequuntur quia inventore velit officiis molestias iure reiciendis laudantium sunt suscipit eaque saepe, nihil, aspernatur aliquid magnam quo expedita id! Officia eius ipsum ducimus molestias vel quod placeat.'
         ]);
+
+        Category::create([
+            'name' => 'Personal',
+            'slug' => 'personal',
+        ])
 
         User::create([
             'name' => 'dodi',
             'password' => 'dodi',
         ]);
+
+        <p>lorem50
     </body>
 </html>
 
 php artisan migrate:refresh --path="database\migrations\2022_03_07_022245_create_posts_table.php"
+php artisan migrate --path="database\migrations\2022_03_07_022245_create_categories_table.php"
