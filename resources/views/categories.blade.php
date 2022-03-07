@@ -1,11 +1,7 @@
 @extends('layouts.main')
 
 @section('main')
-    <ul>
-        @foreach ($categories as $category)
-        <li>
-            <a href="/categories/{{ $category->slug }}">{{ $category->name }}</a>
-        </li>    
-        @endforeach
-    </ul>
+    @foreach ($categories as $category)
+        <a href="/categories/{{ $category->slug }}" class="btn btn-primary">{{ $category->name }}</a>
+    @endforeach
 @endsection

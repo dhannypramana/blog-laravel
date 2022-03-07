@@ -18,11 +18,12 @@ class CreatePostsTable extends Migration
             $table->timestamps();
 
             $table->string('title');
-            $table->string('author');
+            $table->text('excerpt');
             $table->text('body');
             $table->string('slug')->unique();
 
             $table->foreignId('category_id');
+            $table->foreignId('user_id');
         });
     }
 
