@@ -1,9 +1,10 @@
 <html>
     <body>
-        $user.create(
-            'name' => 'Dodi',
-            'password' => bcrypt('dani')
-        )
+        User::create([
+            'name' => 'Dhanny Adhi Pramana',
+            'password' => bcrypt('dani'),
+            'email' => 'p.dhannypramana@gmail.com'
+        ])
 
         Post::create([
             'title' => 'Judul Pertama',
