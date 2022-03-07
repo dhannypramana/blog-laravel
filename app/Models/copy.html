@@ -7,10 +7,19 @@
 
         Post::create([
             'title' => 'Judul Pertama',
-            'slug' => 'judul_pertama',
             'author' => 'Dhanny Pramana',
-            'body' => '<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab in reprehenderit doloribus laborum pariatur itaque eligendi, ipsam deleniti omnis obcaecati eaque voluptas numquam quas nemo ducimus possimus. Voluptate blanditiis fugiat mollitia, aliquid ea architecto ipsum non, accusantium adipisci nesciunt deserunt quaerat? Delectus eveniet accusantium cumque minima, iste quos necessitatibus! Quibusdam aperiam recusandae, perferendis aliquid mollitia molestias cupiditate sit laudantium, totam ipsam, et placeat voluptates esse. Sed consequatur omnis provident illum distinctio assumenda consequuntur quia inventore velit officiis molestias iure reiciendis laudantium sunt suscipit eaque saepe, nihil, aspernatur aliquid magnam quo expedita id! Officia eius ipsum ducimus molestias vel quod placeat.'
-        ]);
+            'body' => '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, rerum enim et odit est tempora corrupti quos perspiciatis quas temporibus ab voluptatem totam laborum ratione. Illum incidunt laborum eligendi porro accusamus cumque blanditiis laboriosam nihil illo deleniti sapiente libero corrupti eveniet vitae dicta pariatur, aut ad minus aliquid ullam tempore.</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur omnis deserunt blanditiis illum voluptatum doloremque fugit vitae, iste laudantium numquam, inventore atque magni ipsam tempora quasi nesciunt est fugiat commodi eos rerum! Magnam alias eos, sequi vitae praesentium quam quis omnis itaque, optio provident, aliquid ipsa blanditiis doloribus maiores odit.</p>',
+            'slug' => 'judul_pertama',
+            'category_id' => 3
+        ])
+
+        Post::create([
+            'title' => 'Judul Ketiga',
+            'author' => 'Dhanny Pramana',
+            'body' => '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, rerum enim et odit est tempora corrupti quos perspiciatis quas temporibus ab voluptatem totam laborum ratione. Illum incidunt laborum eligendi porro accusamus cumque blanditiis laboriosam nihil illo deleniti sapiente libero corrupti eveniet vitae dicta pariatur, aut ad minus aliquid ullam tempore.</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur omnis deserunt blanditiis illum voluptatum doloremque fugit vitae, iste laudantium numquam, inventore atque magni ipsam tempora quasi nesciunt est fugiat commodi eos rerum! Magnam alias eos, sequi vitae praesentium quam quis omnis itaque, optio provident, aliquid ipsa blanditiis doloribus maiores odit.</p>',
+            'slug' => 'judul_Ketiga',
+            'category_id' => 2
+        ])
 
         Category::create([
             'name' => 'Personal',
@@ -21,8 +30,9 @@
             'name' => 'dodi',
             'password' => 'dodi',
         ]);
-
-        <p>lorem50
+        
+        <!-- Lorem 50 x 2 paragraf -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, rerum enim et odit est tempora corrupti quos perspiciatis quas temporibus ab voluptatem totam laborum ratione. Illum incidunt laborum eligendi porro accusamus cumque blanditiis laboriosam nihil illo deleniti sapiente libero corrupti eveniet vitae dicta pariatur, aut ad minus aliquid ullam tempore.</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur omnis deserunt blanditiis illum voluptatum doloremque fugit vitae, iste laudantium numquam, inventore atque magni ipsam tempora quasi nesciunt est fugiat commodi eos rerum! Magnam alias eos, sequi vitae praesentium quam quis omnis itaque, optio provident, aliquid ipsa blanditiis doloribus maiores odit.</p>
     </body>
 </html>
 
