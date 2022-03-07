@@ -5,5 +5,5 @@
 @endsection
 
 @section('main')
-    <h1>Ini Halaman Home</h1>
+    <h1>Selamat Datang, Administrator</h1>
 @endsection
