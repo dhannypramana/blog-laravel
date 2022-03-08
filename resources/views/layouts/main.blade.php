@@ -16,10 +16,11 @@
         }
 
         .article {
-            border: 1px solid black;
+            border: 1px solid gainsboro;
             margin: 20px 0;
             padding: 20px;
-            box-shadow: 10px 10px 6px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 10px 10px 6px 0 whitesmoke;
+            border-radius: 8px;
         }
     </style>
     @yield('css-link')
