@@ -25,10 +25,6 @@
             box-shadow: 10px 10px 6px 0 whitesmoke;
             border-radius: 8px;
         }
-
-        li {
-            list-style-type: none;
-        }
     </style>
     @yield('css-link')
 </head>
