@@ -19,7 +19,7 @@
             border: 1px solid black;
             margin: 20px 0;
             padding: 20px;
-            box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 10px 10px 6px 1px rgba(0, 0, 0, 0.2);
         }
     </style>
     @yield('css-link')
