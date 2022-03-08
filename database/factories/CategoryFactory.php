@@ -4,7 +4,7 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class PostFactory extends Factory
+class CategoryFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -43,14 +43,11 @@ class PostFactory extends Factory
 
     public function definition()
     {
-        $title = $this->faker->sentence(mt_rand(2, 8));
+        $name = $this->faker->word();
+
         return [
-            'title' => $title,
-            'slug' => $this->generateSlug($title),
-            'excerpt' => $this->faker->paragraph(),
-            'body' => $this->faker->paragraph(mt_rand(10, 25)),
-            'category_id' => mt_rand(1,5),
-            'user_id' => mt_rand(1,5)
+            'name' => $name,
+            'slug' => $this->generateSlug($name)
         ];
     }
 }

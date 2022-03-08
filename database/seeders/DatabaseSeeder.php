@@ -18,16 +18,6 @@ class DatabaseSeeder extends Seeder
     {
         \App\Models\User::factory(5)->create();
         \App\Models\Post::factory(20)->create();
-
-        // Categry Seeder
-        Category::create([
-            'name' => 'Web Programming',
-            'slug' => 'web-programming',
-        ]);
-
-        Category::create([
-            'name' => 'Personal',
-            'slug' => 'personal',
-        ]);
+        \App\Models\Category::factory(5)->create();
     }
 }
