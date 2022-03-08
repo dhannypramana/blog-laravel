@@ -5,7 +5,7 @@
 @endsection
 
 @section('main')
-    <h1>Halaman Posts</h1>
+    <h1>All Post</h1>
     
     @foreach ($posts as $post)
     <article class="article">

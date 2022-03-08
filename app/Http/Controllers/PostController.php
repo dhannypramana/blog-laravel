@@ -13,7 +13,7 @@ class PostController extends Controller
     {
         return view('posts', [
             'page_name' => 'posts',
-            'posts' => Post::latest()->get()
+            'posts' => Post::with(['user', 'category'])->get()
         ]);
     }
 
@@ -23,5 +23,10 @@ class PostController extends Controller
             'page_name' => 'posts',
             'post' => $post
         ]);
+    }
+
+    public function ApiData()
+    {
+        return Post::all();
     }
 }

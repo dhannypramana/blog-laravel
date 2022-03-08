@@ -21,7 +21,7 @@ class UserController extends Controller
     {
         return view('user', [
             'page_name' => 'user',
-            'posts' => $user->posts
+            'posts' => $user->posts->load('category', 'user')
         ]);
     }
 }
