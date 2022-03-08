@@ -28,4 +28,4 @@ Route::get('/posts', [PostController::class, 'index']);
 Route::get('/posts/{post:slug}', [PostController::class, 'single_post']);
 Route::get('/categories', [CategoryController::class, 'index']);
 Route::get('/categories/{category:slug}', [CategoryController::class, 'single_category']);
-Route::get('/user/{user:slug}', [UserController::class, 'userPost']);
+Route::get('/authors/{user:slug}', [UserController::class, 'userPost']);
