@@ -48,7 +48,8 @@ class PostFactory extends Factory
             'title' => $title,
             'slug' => $this->generateSlug($title),
             'excerpt' => $this->faker->paragraph(),
-            'body' => $this->faker->paragraph(mt_rand(10, 25)),
+            'body' => '<p>' .  implode('<p></p>', $this->faker->paragraphs(mt_rand(10, 25))) . '</p>',
+            
             'category_id' => mt_rand(1,5),
             'user_id' => mt_rand(1,5)
         ];

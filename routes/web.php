@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\BookController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,15 +18,19 @@ use App\Http\Controllers\CategoryController;
 |
 */
 
-Route::get('/home', function () {
+Route::get('/blog/home', function () {
     return view('home', [
         'page_name' => 'home',
     ]);
 });
 
-Route::get('/about', [UserController::class, 'show']);
-Route::get('/posts', [PostController::class, 'index']);
-Route::get('/posts/{post:slug}', [PostController::class, 'single_post']);
-Route::get('/categories', [CategoryController::class, 'index']);
-Route::get('/categories/{category:slug}', [CategoryController::class, 'single_category']);
-Route::get('/authors/{user:slug}', [UserController::class, 'userPost']);
+// Blog
+Route::get('/blog/about', [UserController::class, 'show']);
+Route::get('/blog/posts', [PostController::class, 'index']);
+Route::get('/blog/posts/{post:slug}', [PostController::class, 'single_post']);
+Route::get('/blog/categories', [CategoryController::class, 'index']);
+Route::get('/blog/categories/{category:slug}', [CategoryController::class, 'single_category']);
+Route::get('/blog/authors/{user:slug}', [UserController::class, 'userPost']);
+
+// Books
+Route::get('/book/home', [BookController::class, 'index']);
