@@ -34,3 +34,7 @@ Route::get('/blog/authors/{user:slug}', [UserController::class, 'userPost']);
 
 // Books
 Route::get('/book/home', [BookController::class, 'index']);
+
+Route::get('user', function () {
+    return hello;
+});
