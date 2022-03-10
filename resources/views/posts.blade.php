@@ -64,4 +64,6 @@
     @else
         <p class="text-center fs-4">No Post Found</p>
     @endif
+
+    {{ $posts->links() }}
 @endsection

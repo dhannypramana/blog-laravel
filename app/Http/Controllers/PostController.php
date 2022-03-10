@@ -13,7 +13,7 @@ class PostController extends Controller
 
         return view('posts', [
             'page_name' => 'posts',
-            'posts' => $posts = Post::latest()->filter(request(['search']))->get()
+            'posts' => Post::latest()->filter(request(['search']))->paginate(4)
         ]);
     }
 
