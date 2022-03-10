@@ -7,6 +7,6 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>Halaman Home Books {{ $name }}</h1>
+    
 </body>
 </html>

@@ -19,7 +19,7 @@
                             </div>
                         </div>
 
-                    <a href="/posts" class="btn btn-primary mb-5">Kembali ke daftar posts</a>
+                    <a href="/blog/posts" class="btn btn-primary mb-5">Kembali ke daftar posts</a>
             </div>
         </div>
     </div>
