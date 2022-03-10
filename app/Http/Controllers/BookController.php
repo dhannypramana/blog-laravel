@@ -16,7 +16,8 @@ class BookController extends Controller
     public function index()
     {
         return view('book.home', [
-            'name' => 'name'
+            'name' => 'name',
+            'books' => Book::latest()->get()
         ]);
     }
 

@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\Post;
 use App\Models\User;
 use App\Models\Category;
+use App\Models\Book;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -19,5 +20,15 @@ class DatabaseSeeder extends Seeder
         \App\Models\User::factory(5)->create();
         \App\Models\Post::factory(20)->create();
         \App\Models\Category::factory(5)->create();
+
+        Book::create([
+            'title' => 'Attack on Titan',
+            'type' => 'Anime'
+        ]);
+
+        Book::create([
+            'title' => 'Naruto',
+            'type' => 'Manga'
+        ]);
     }
 }

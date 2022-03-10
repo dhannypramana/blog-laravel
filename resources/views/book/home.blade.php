@@ -7,6 +7,9 @@
     <title>Home</title>
 </head>
 <body>
-    
+    @foreach ($books as $book)
+        {{ $book["title"] }}
+        {{ $book["type"] }}
+    @endforeach
 </body>
 </html>
