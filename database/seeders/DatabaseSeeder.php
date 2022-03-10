@@ -20,15 +20,6 @@ class DatabaseSeeder extends Seeder
         \App\Models\User::factory(5)->create();
         \App\Models\Post::factory(20)->create();
         \App\Models\Category::factory(5)->create();
-
-        Book::create([
-            'title' => 'Attack on Titan',
-            'type' => 'Anime'
-        ]);
-
-        Book::create([
-            'title' => 'Naruto',
-            'type' => 'Manga'
-        ]);
+        \App\Models\Book::factory(5)->create();
     }
 }
