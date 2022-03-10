@@ -2,12 +2,22 @@
     padding: 20px;
 }
 
-/* p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-} */
-
 p {
+        /* white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; */
     text-align: justify;
+}
+
+.form {
+    border: 1px solid red;
+    width: 100px;
+}
+
+* {
+    border: 1px solid red;
+}
+
+body {
+    background-color: red;
 }

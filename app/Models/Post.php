@@ -25,6 +25,23 @@ class Post extends Model
         'category'
     ];
 
+    public function scopeFilter($query, array $fillters)
+    {
+        /**
+         *   sama seperti dibawah
+         * 
+             if (isset($fillters['search']) ? $fillters['search'] : false) {
+                 return $query
+                    ->where('title', 'like', '%' . $fillters['search'] . '%');
+            }
+         * 
+         */
+
+        $query->when($fillters['search'] ?? false, function ($query, $search) {
+            return $query->where('title', 'like', '%' . $search . '%');
+        });
+    }
+
     public function category()
     {
         return $this->belongsTo(Category::class);

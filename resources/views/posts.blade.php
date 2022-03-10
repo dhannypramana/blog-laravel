@@ -5,6 +5,21 @@
 @endsection
 
 @section('main')
+    <h1 class="text-center mb-3">All Post</h1>
+
+    <div class="row mb-3 justify-content-center">
+        <div class="col-md-6">
+            <form action="/blog/posts" method="get">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search some post" name="search" value="{{ request('search') }}">
+                    <div class="input-group-append">
+                        <button class="btn btn-dark" type="submit">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
     @if ($posts->count())
         <div class="card mb-3">
             <img class="card-img-top" src="https:/source.unsplash.com/1200x400/?computer" alt="Card image cap">
@@ -20,10 +35,6 @@
                 <a class="btn btn-primary" href="/blog/posts/{{ $posts[0]->slug }}">Read More</a>
             </div>
         </div>
-
-    @else
-        <p class="text-center fs-4">No Post Found</p>
-    @endif
 
     <div class="container-fluid">
         <div class="row">
@@ -50,4 +61,7 @@
         </div>
     </div>
 
+    @else
+        <p class="text-center fs-4">No Post Found</p>
+    @endif
 @endsection
